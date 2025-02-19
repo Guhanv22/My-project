@@ -1,0 +1,240 @@
+/* General Styling */
+/* Global Styles */
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body, html {
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  /* padding-top: 6rem; Increased padding to ensure the header is visible */
+}
+
+.layoutcontainer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: block; /* Ensure the container doesn't collapse */
+}
+
+/* Navbar Styles */
+nav {
+  background-color: #1e40af;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 1rem 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Adjusted main padding to prevent navbar overlap */
+main {
+  flex-grow: 1;
+  padding: 2rem 1rem; /* Adjusted padding for better spacing */
+  margin-top: 6rem; /* Ensures content is not overlapped by navbar */
+  padding-bottom: 6rem; /* Ensure content is not hidden under footer */
+}
+
+/* Footer Styles */
+footer {
+  background-color: #2d3748;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 0;
+  z-index: 1000;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer img {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 0.5rem;
+}
+
+footer .flex-col {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+/* Audio Cards Layout */
+.audio-cards {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.audio-card {
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  
+ 
+  padding: 16px;
+  text-align: center;
+  max-width: 240px; /* Slightly increased card size */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 320px; /* Slightly increased height */
+}
+
+.audio-card img {
+  border-radius: 8px;
+  width: 100%;
+  height: 150px; /* Fixed height for images */
+  object-fit: cover;
+}
+
+/* Button Container for Buy & Eye Icons */
+#root{
+  width: 100%;
+  
+}
+.audio-card .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.audio-card .icon-button {
+  background-color: #e2e8f0; /* Light gray background */
+  color: black; /* Changed icon color for better visibility */
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease-in-out, background-color 0.2s;
+  font-size: 16px; /* Increased icon size */
+}
+
+.audio-card .icon-button:hover {
+  transform: scale(1.1);
+  background-color: #d1d5db; /* Slightly darker gray */
+}
+
+.audio-card .bg-gray-100 {
+  padding: 8px;
+  border-radius: 6px;
+  background-color: #e2e8f0; /* Light gray background */
+}
+
+/* Ensure the recently added tag is visible */
+.recently-added {
+  visibility: visible; /* Ensure visibility */
+  position: relative; /* Prevent overlap or hiding */
+  z-index: 1; /* Prevent it from being hidden by other elements */
+}
+
+/* Search Container */
+.search-container input {
+  max-width: 300px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  nav .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  footer .container {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  footer img {
+    margin-bottom: 0;
+  }
+
+  footer a {
+    font-size: 1.1rem;
+  }
+
+  .audio-cards {
+    grid-template-columns: repeat(2, 1fr); /* Two columns on small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .audio-cards {
+    grid-template-columns: 1fr; /* Single column on very small screens */
+  }
+}

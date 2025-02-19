@@ -1,0 +1,25 @@
+
+.history-item {
+    border: 1px solid #080808;
+    padding: 16px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .history-item h2 {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .history-item p {
+    margin: 8px 0;
+  }
+  
+  .history-list {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+   .p{
+    color: black;
+   }

@@ -1,0 +1,116 @@
+/* Playlist Container */
+.playlist-container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .playlist-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .playlist-container h3 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  /* Form and Inputs Styling */
+  .playlist-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  
+  .playlist-container input[type="text"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .playlist-container button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .playlist-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Audio Selection */
+  .playlist-container .audio-selection {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  .playlist-container .audio-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .playlist-container .audio-item input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .playlist-container .audio-item label {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  /* Playlist Display */
+  .playlist-container ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 30px;
+  }
+  
+  .playlist-container ul li {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .playlist-container ul li strong {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .playlist-container ul li p {
+    margin-top: 5px;
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* No Audio Message */
+  .playlist-container p {
+    font-size: 1rem;
+    color: #888;
+    margin-top: 15px;
+  }
+  
+  /* Error Styling */
+  .playlist-container .error-message {
+    color: red;
+    font-size: 1.2rem;
+    margin-top: 15px;
+  }
+  

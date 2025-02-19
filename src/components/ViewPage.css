@@ -1,0 +1,30 @@
+.view-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .view-page h2 {
+    margin-bottom: 10px;
+  }
+  
+  .view-page .MuiButton-root {
+    margin: 0 10px;
+  }
+  
+  .view-page ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .view-page li {
+    margin-bottom: 5px;
+  }
+  
+  .view-page .MuiTextField-root {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  
